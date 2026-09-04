@@ -3,35 +3,60 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="theme-color" content="#121619">
-  <meta name="description" content="Mazovia Offroad — nawigacja dla kierowców szukających maksimum terenu.">
-  <title>Mazovia Offroad — pobierz na Androida</title>
+  <meta name="theme-color" content="#090d0e">
+  <meta name="description" content="Mazovia Offroad — nawigacja terenowa na Androida. Pętle, trasy do lasów, routing offline, GPX i rejestrowanie przejazdów.">
+  <meta property="og:title" content="Mazovia Offroad — więcej terenu, mniej asfaltu">
+  <meta property="og:description" content="Planuj maksymalnie terenowe trasy, pętle i dojazdy do lasów. Nawigacja offline na Androida.">
+  <title>Mazovia Offroad — nawigacja terenowa</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <main>
-    <nav><span class="mark">MO</span><strong>Mazovia Offroad</strong><span class="beta">BETA</span></nav>
+  <header class="topbar">
+    <a class="brand" href="#start"><span class="mark">MO</span><strong>Mazovia Offroad</strong><span class="beta">BETA</span></a>
+    <nav><a href="#funkcje">Możliwości</a><a href="#routing">Routing</a><a href="#offline">Offline</a></nav>
+    <a class="mini" href="https://github.com/kasparowgaming/mazovia-offroad-download/releases/latest/download/mazovia-offroad.apk">Pobierz APK</a>
+  </header>
+
+  <main id="start">
     <section class="hero">
-      <div class="copy">
+      <div>
         <p class="eyebrow">NAWIGACJA OFF-ROAD NA ANDROIDA</p>
-        <h1>Więcej terenu.<br><span>Mniej asfaltu.</span></h1>
-        <p class="lead">Planuj trasy, pętle i dojazdy do lasów z priorytetem dróg nieutwardzonych. Działa z routingiem offline.</p>
-        <a class="download" href="https://github.com/kasparowgaming/mazovia-offroad-download/releases/latest/download/mazovia-offroad.apk">↓&nbsp;&nbsp;Pobierz aplikację</a>
-        <p class="meta">Android 8 lub nowszy · wersja 0.2.0 beta</p>
+        <h1>Jedź tam, gdzie<br><span>kończy się asfalt.</span></h1>
+        <p class="lead">Mazovia Offroad układa trasy z priorytetem szutrów, gruntówek, dróg polnych i leśnych. Nie szuka najszybszej drogi — szuka możliwie dużo terenu.</p>
+        <div class="actions"><a class="download" href="https://github.com/kasparowgaming/mazovia-offroad-download/releases/latest/download/mazovia-offroad.apk">↓ Pobierz aplikację</a><a class="ghost" href="#funkcje">Zobacz możliwości</a></div>
+        <p class="meta">Android 8 lub nowszy · wersja 0.2.0 beta · routing offline</p>
       </div>
-      <div class="route-card" aria-label="Podgląd parametrów trasy">
-        <div class="route-top"><span>TRASA ODKRYWCZA</span><b>85%</b></div>
-        <div class="track"><i></i><i></i><i></i><i></i><i></i></div>
-        <div class="numbers"><div><strong>95,6</strong><small>KM</small></div><div><strong>3:18</strong><small>CZAS</small></div><div><strong>85%</strong><small>POZA ASFALTEM</small></div></div>
+      <div class="demo" aria-label="Przykład trasy terenowej">
+        <div class="map"><i class="road a"></i><i class="road b"></i><i class="road c"></i><i class="road d"></i><span class="pin">◆</span><span class="goal"></span></div>
+        <div class="route-card"><div class="route-head"><span>NAJWIĘCEJ TERENU</span><b>85%</b></div><h3>95,6 km przez szutry i grunt</h3><div class="surface"><i></i><i></i><i></i><i></i></div><div class="numbers"><div><b>3:18</b><small>CZAS</small></div><div><b>81 km</b><small>TEREN</small></div><div><b>14 km</b><small>ASFALT</small></div></div></div>
       </div>
     </section>
-    <section class="steps">
-      <article><b>01</b><h2>Zainstaluj</h2><p>Pobierz APK i zezwól przeglądarce na instalację z tego źródła.</p></article>
-      <article><b>02</b><h2>Pobierz dane</h2><p>Przy pierwszym uruchomieniu aplikacja pobierze mapy i routing offline.</p></article>
-      <article><b>03</b><h2>Jedź w teren</h2><p>Wybierz profil, zaplanuj trasę i zachowaj ślad przejazdu.</p></article>
+
+    <section class="proof"><span><b>3</b> różne warianty</span><span><b>538 MB</b> danych routingu</span><span><b>OFFLINE</b> po pobraniu grafu</span><span><b>GPX</b> import i eksport</span></section>
+
+    <section class="intro" id="funkcje"><p class="eyebrow">ZAPROJEKTOWANA POD PRAWDZIWY OFF-ROAD</p><h2>Nie kolejna nawigacja samochodowa.</h2><p>Zwykła mapa minimalizuje czas. Mazovia Offroad premiuje teren, ogranicza długie asfaltowe łączniki i pokazuje charakter poszczególnych fragmentów trasy.</p></section>
+
+    <section class="features">
+      <article class="wide"><span class="icon">↝</span><h3>Trzy profile trasy</h3><p><b>Najpewniejsza</b>, <b>Najwięcej terenu</b> i <b>Odkrywcza</b>. Porównujesz przebiegi i wybierasz charakter jazdy, zamiast dostawać trzy kopie tej samej drogi.</p></article>
+      <article><span class="icon">⟳</span><h3>Generator pętli</h3><p>Pętle 20, 50, 100 lub 150 km. Algorytm ogranicza powtórzenia oraz wymuszone zawracanie.</p></article>
+      <article><span class="icon">♧</span><h3>Trasy do lasów</h3><p>Wybiera kompleksy z użyteczną siecią dróg i prowadzi do nich osobnymi wariantami.</p></article>
+      <article><span class="icon">⌁</span><h3>Nawigacja w ruchu</h3><p>Duży manewr, dystans do zakrętu, postęp trasy i automatyczny powrót śledzenia pozycji.</p></article>
+      <article><span class="icon">●</span><h3>Rejestruj ślad</h3><p>Nagrywaj, pauzuj i kończ przejazd. Jazdy są grupowane według dystansu, czasu i daty.</p></article>
+      <article><span class="icon">▱</span><h3>Obsługa GPX</h3><p>Wczytaj gotowy ślad i prowadź po nim. Własne przejazdy możesz zapisać i wyeksportować.</p></article>
     </section>
-    <section class="warning"><strong>Ważne</strong><p>Trasy są propozycjami. Zawsze przestrzegaj znaków, zakazów wjazdu i praw właścicieli terenu.</p></section>
+
+    <section class="routing" id="routing">
+      <div><p class="eyebrow">ROUTING STWORZONY DLA TERENU</p><h2>Droga ma być ciekawa, nie tylko krótka.</h2><p>Ocena bierze pod uwagę udział terenu, ciągłość off-roadu, asfaltowe łączniki, powtórzenia i drogi już przejechane.</p><ul><li>priorytet szutrów, gruntówek i dróg polnych;</li><li>dane OSM oraz państwowe dane drogowe;</li><li>kolory trasy według przewidywanej nawierzchni;</li><li>zielone drogi nowe, czerwone — już przejechane;</li><li>wysoki kontrast do jazdy na kierownicy.</li></ul></div>
+      <div class="profiles"><article><span>01</span><div><h3>Najpewniejsza</h3><p>Przewidywalny przebieg i rozpoznane drogi.</p></div></article><article class="active"><span>02</span><div><h3>Najwięcej terenu</h3><p>Asfalt w najdalszej kolejności. Maksimum off-roadu.</p></div></article><article><span>03</span><div><h3>Odkrywcza</h3><p>Nowe drogi i korytarze inne niż wcześniej.</p></div></article></div>
+    </section>
+
+    <section class="offline" id="offline"><div><p class="eyebrow">BEZ ZASIĘGU. BEZ PROBLEMU.</p><h2>Routing działa lokalnie w telefonie.</h2><p>Przy pierwszym uruchomieniu aplikacja pobiera graf drogowy. Potem trasę możesz wyznaczyć także tam, gdzie zanika internet.</p></div><div class="stats"><span><b>538 MB</b><small>PAKIET DANYCH</small></span><span><b>1×</b><small>POBIERASZ NA START</small></span><span><b>∞</b><small>TRAS OFFLINE</small></span></div></section>
+
+    <section class="extras"><article><h3>Warstwy mapy</h3><p>Mapa, topo, satelita i BDOT500 do dokładnego sprawdzania przebiegu dróg.</p></article><article><h3>Statystyki jazdy</h3><p>Dystans, czas ruchu i postojów, teren, asfalt oraz mapa przejazdu.</p></article><article><h3>Twoje dane drogowe</h3><p>Historia przejazdów pomaga później wybierać nowe drogi.</p></article><article><h3>Tryb motocyklowy</h3><p>Duże pola dotykowe, układ poziomy i uproszczony ekran podczas jazdy.</p></article></section>
+
+    <section class="install"><div><p class="eyebrow">GOTOWY NA TESTOWY PRZEJAZD?</p><h2>Pobierz Mazovia Offroad.</h2><p>Publiczna wersja beta dla telefonów z Androidem.</p></div><a class="download" href="https://github.com/kasparowgaming/mazovia-offroad-download/releases/latest/download/mazovia-offroad.apk">↓ Pobierz APK</a></section>
+    <section class="warning"><strong>Jedź odpowiedzialnie</strong><p>Trasy są propozycjami opartymi na dostępnych danych. Aplikacja nie rozstrzyga prawa wjazdu. Zawsze przestrzegaj znaków, szlabanów, przepisów i praw właścicieli terenu.</p></section>
   </main>
-  <footer><span>© 2026 Mazovia Offroad</span><a href="privacy.html">Polityka prywatności</a></footer>
+  <footer><div><span class="mark small">MO</span><strong>Mazovia Offroad</strong></div><span>© 2026 Mazovia Offroad</span><a href="privacy.html">Polityka prywatności</a></footer>
 </body>
 </html>
