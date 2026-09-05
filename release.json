@@ -1,11 +1,11 @@
 {
   "schemaVersion": 1,
-  "versionCode": 2,
-  "versionName": "0.2.0-beta",
+  "versionCode": 3,
+  "versionName": "0.2.1-beta",
   "apkUrl": "https://github.com/kasparowgaming/mazovia-offroad-download/releases/latest/download/mazovia-offroad.apk",
   "graph": {
     "version": "maz-lub-roadclass-v2-2026-09",
-    "url": "https://github.com/kasparowgaming/mazovia-offroad-download/releases/latest/download/routing-maz-lub.zip",
+    "url": "https://github.com/kasparowgaming/mazovia-offroad-download/releases/download/v0.2.0-beta/routing-maz-lub.zip",
     "sha256": "3f8ee70094fc5e4f38151c48e5608535e06bb4bdbbb46419f5e44b5a3ba5bce6",
     "downloadBytes": 278491965,
     "installedBytes": 537550020
