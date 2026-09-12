@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "versionCode": 4,
-  "versionName": "0.2.2-beta",
+  "versionCode": 6,
+  "versionName": "0.2.4-beta",
   "apkUrl": "https://github.com/kasparowgaming/mazovia-offroad-download/releases/latest/download/mazovia-offroad.apk",
   "graph": {
     "version": "maz-lub-roadclass-v2-2026-09",
